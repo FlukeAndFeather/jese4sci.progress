@@ -1,18 +1,21 @@
 Package: jese4sci.progress
-Title: What the Package Does (One Line, Title Case)
+Title: Track student progress in jese4sci
 Version: 0.0.0.9000
 Authors@R: 
     person("Max", "Czapanskiy", , "maxczap@stanford.edu", role = c("aut", "cre"),
            comment = c("ORCID-ID" = "0000-0002-6302-905X"))
-Description: What the package does (one paragraph).
+Description: jese4sci is a short course that teaches the fundamentals of
+    software engineering to scientists. Assignments are submitted as
+    GitHub issues. This package uses the GitHub API to fetch those issues
+    and report student progress.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Language: es
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
 Imports: 
     dplyr,
     gh,
     purrr,
     stringr
+Encoding: UTF-8
+Language: es
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
