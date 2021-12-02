@@ -31,7 +31,7 @@ fetch_track_issues <- function(repo = c("jese4sci-RC",
   lesson <- purrr::map_chr(issue_list, "title") %>%
     stringr::str_extract("[A-Z]+[0-9]{3}")
   url <- purrr::map_chr(issue_list, "html_url")
-  open <- purrr::map(issue_list, "closed_at") %>%
+  is_open <- purrr::map(issue_list, "closed_at") %>%
     purrr::map_chr(~ !is.null(.x))
 
   dplyr::tibble(
